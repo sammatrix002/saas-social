@@ -1,0 +1,17 @@
+{
+  "name": "whatsomni-baileys-microservice",
+  "version": "3.0.0",
+  "description": "WhatsOmni Persistent Baileys Multi-Device WhatsApp Worker Microservice",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "express": "^4.21.2",
+    "pino": "^9.6.0",
+    "qrcode": "^1.5.4",
+    "dotenv": "^17.2.3"
+  }
+}

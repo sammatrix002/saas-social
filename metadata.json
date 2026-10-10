@@ -1,0 +1,6 @@
+{
+  "name": "WhatsOmni v3.0 - AI Omnichannel SaaS & CRM",
+  "description": "Enterprise Omnichannel Customer Engagement SaaS, Conversational AI Engine, Meta Ads & CTWA Marketing, Flow Builder, and Sales CRM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

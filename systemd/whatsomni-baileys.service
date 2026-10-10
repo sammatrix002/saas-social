@@ -1,0 +1,23 @@
+[Unit]
+Description=WhatsOmni v3.0 Baileys WhatsApp Worker Microservice
+After=network.target whatsomni.service
+
+[Service]
+Type=simple
+User=whatsomni
+Group=whatsomni
+WorkingDirectory=/var/www/whatsomni
+Environment=NODE_ENV=production
+Environment=BAILEYS_PORT=5001
+EnvironmentFile=/var/www/whatsomni/.env.production
+ExecStart=/usr/bin/node /var/www/whatsomni/services/baileys-worker/server.js
+Restart=always
+RestartSec=10
+KillSignal=SIGTERM
+TimeoutStopSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=whatsomni-baileys
+
+[Install]
+WantedBy=multi-user.target
